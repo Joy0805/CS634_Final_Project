@@ -8,6 +8,8 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge.
 - Load pneumonia locations
 - 
 
-## Step1
+## Step 1 - 
 
 
+## Reference
+- CNN Segmentation + connected components, Jonne, https://www.kaggle.com/jonnedtc/cnn-segmentation-connected-components. 
