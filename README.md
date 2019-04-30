@@ -2,7 +2,8 @@
 The project is about Kaggle competition - RSNA Pneumonia Detection Challenge. 
 
 ## Introduction
-- The objective of the analysis is to detect the chest opacity. 
+- 
+- The objective of the analysis is to locate the lung opacity on chest radiographs and diagnose pneumonia. 
 
 ## Overview
 - Load pneumonia locations
