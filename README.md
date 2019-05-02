@@ -1,5 +1,5 @@
 # CS634_Final_Project
-The project is about Kaggle competition - RSNA Pneumonia Detection Challenge. 
+The project is about Kaggle competition - RSNA Pneumonia Detection Challenge provided in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge. 
 
 ## Introduction
 - 
