@@ -7,7 +7,10 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge.
 
 ## Overview
 - Load pneumonia locations
-- 
+- Analyze chest radiographs
+- Create methods for data training
+- Predict on validation
+- Predict on test set
 
 ## Step 1 - Collect information about pneumonia locations from csv file
 
