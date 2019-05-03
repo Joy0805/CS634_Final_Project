@@ -12,6 +12,27 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 - Predict on validation
 - Predict on test set
 
+## Required Packages
+- os
+- csv
+- random
+- pydicom
+- numpy
+- pandas
+- skimage
+- tensorflow
+- matplotlib
+
+## Files and Folders Explanation
+- stage_2_train_labels.csv: training data set
+- stage_2_train_images: dicom files of training set
+- stage_2_test_images: dicom files of test set
+* All files available in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data. 
+
+## Important Variables Explanation
+
+
+
 ## Step 1 - Collect information about pneumonia locations from csv file
 
 
@@ -28,6 +49,7 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 
 
 ## Step 6 - Predict
+
 
 
 
