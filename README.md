@@ -2,8 +2,11 @@
 The project is about Kaggle competition - RSNA Pneumonia Detection Challenge provided in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge. 
 
 ## Introduction
-- 
 - The objective of the analysis is to locate the lung opacity on chest radiographs and diagnose pneumonia. 
+- Firstly, choosing convolutional neural network to segment the image of lung.  The network consists of a number of residual blocks with convolutions and downsampling blocks with max pooling.  At the end of the network a single upsampling layer converts the output to the same shape as the input.
+- Secondly, using connected components to deparate multiple areas of predicted pneumonia.
+- Finally, drawing a bounding box around every connected component.
+
 
 ## Overview
 - Load pneumonia locations
@@ -34,12 +37,9 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 
 
 ## Step 1 - Collect information about pneumonia locations from csv file
-- Read the label information of the training set from stage_2_train_labels.csv
-- Pick out the samples with pneumonia
-- Read all images from the training set
-- Shuffle images from the original training set and divide it into training set and validation set
 
-## Step 2 - Show the overall information about chest radiographs
+
+## Step 2 - Show information about chest radiographs
 
 
 ## Step 3 - Define Class and methods
