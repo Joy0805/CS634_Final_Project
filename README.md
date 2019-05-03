@@ -24,13 +24,10 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 ## Step 4 - Create train and validation generators
 
 
-## Step 5 - Plot
+## Step 5 - Plot and Show Prediction on validation
 
 
-## Step 6 - Show Prediction on validation
-
-
-## Step 7 - Predict
+## Step 6 - Predict
 
 
 
