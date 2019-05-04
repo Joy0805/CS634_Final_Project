@@ -50,7 +50,7 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 
 ## Step 3 - Create class generator
 - Define basic information of each image file
-- Define how to load dicom file as numpy array by using package pydicom and rel$
+- Define how to load dicom file as numpy array by using package pydicom and relate it with location information if the image contains pneumonia
 - Define prediction function 
 - Define how to get the prediction result
 - Define epoch in order to learn and precit step by step
@@ -59,15 +59,16 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 ## Step 4 - Define convolution neural networks
 
 
-## Step 5 - Show prediction performance epoch by epoch
+## Step 5 - Learning by applying convolution neural networks
+
+
+## Step 6 - Show prediction performance epoch by epoch
 - Calculate the value of jaccard loss function
 - Calculate the prediction accuracy
 - Calculate the overlapping area between predicted area and actual area(iou)
 
-## Step 6 - Predict
-
-
-
+## Step 7 - Predict
+- Forecasting test sets with trained models
 
 
 ## Reference
