@@ -48,10 +48,15 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 - Draw heatmap of all pneumonia areas
 - Draw histgram of height and width of all pneumonia areas
 
-## Step 3 - Define Class and methods
+## Step 3 - Create class generator
+- Define basic information of each image file
+- Define how to load dicom file as numpy array by using package pydicom and rel$
+- Define prediction function 
+- Define how to get the prediction result
+- Define epoch in order to learn and precit step by step
+- Define the number of images need to learn and predict in each epoch
 
-
-## Step 4 - Create train and validation generators
+## Step 4 - Define convolution neural networks
 
 
 ## Step 5 - Show prediction performance epoch by epoch
