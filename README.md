@@ -57,7 +57,11 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 - Define the number of images need to learn and predict in each epoch
 
 ## Step 4 - Define convolution neural networks
-
+- Define the normalization function of the neural networks
+- Define The hidden layer of the activation function of the neural networks
+- Define The convolution layer of the neural networks
+- Define the normalization and max pooling function of neural networks to reduce feature dimensions and avoid over-fitting
+- Define the channels, blocks and depth of the neural networks
 
 ## Step 5 - Learning by applying convolution neural networks
 
