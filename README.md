@@ -36,11 +36,14 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 
 
 
-## Step 1 - Collect information about pneumonia locations from csv file
+## Step 1 - Collect information and separate training set
+- Read the label information from stage_2_train_labels.csv and pick out all the samples with pneumonia
+- Read and shuffle the original training set and divide it into new training set and validation set
 
-
-## Step 2 - Show information about chest radiographs
-
+## Step 2 - Visualization of the overall information about chest radiographs
+- Count the number of pneumonia areas in each pneumonia sample
+- Draw heatmap of all pneumonia areas
+- Draw histgram of height and width of all pneumonia areas
 
 ## Step 3 - Define Class and methods
 
@@ -48,8 +51,10 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 ## Step 4 - Create train and validation generators
 
 
-## Step 5 - Plot and Show Prediction on validation
-
+## Step 5 - Show prediction performance epoch by epoch
+- Calculate the value of jaccard loss function
+- Calculate the prediction accuracy
+- Calculate the overlapping area between predicted area and actual area(iou)
 
 ## Step 6 - Predict
 
