@@ -37,8 +37,11 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 
 
 ## Step 1 - Collect information and separate training set
-- Read the label information from stage_2_train_labels.csv and pick out all the samples with pneumonia
+- Read the label information from stage_2_train_labels.csv
+- Retrieve information by sample name, location, and whether there is pneumonia
+- Pick out all the samples with pneumonia
 - Read and shuffle the original training set and divide it into new training set and validation set
+* The division criterion of validation set is that it is one tenth of original training set
 
 ## Step 2 - Visualization of the overall information about chest radiographs
 - Count the number of pneumonia areas in each pneumonia sample
