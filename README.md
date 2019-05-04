@@ -32,10 +32,6 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 - stage_2_test_images: dicom files of test set
 * All files available in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data. 
 
-## Important Variables Explanation
-
-
-
 ## Step 1 - Collect information and separate training set
 - Read the label information from stage_2_train_labels.csv
 - Retrieve information by sample name, location, and whether there is pneumonia
@@ -57,14 +53,18 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 - Define the number of images need to learn and predict in each epoch
 
 ## Step 4 - Define convolution neural networks
-- Define the normalization function of the neural networks
-- Define The hidden layer of the activation function of the neural networks
-- Define The convolution layer of the neural networks
-- Define the normalization and max pooling function of neural networks to reduce feature dimensions and avoid over-fitting
+- Define the normalization function of the neural networks(keras.layers.BatchNormalization)
+- Define The hidden layer of the activation function of the neural networks(keras.layers.LeakyReLU)
+- Define The convolution layer of the neural networks(keras.layers.Conv2D)
+- Define the normalization and max pooling function of neural networks to reduce feature dimensions and avoid over-fitting(keras.layers.MaxPool2D)
 - Define the channels, blocks and depth of the neural networks
 
 ## Step 5 - Learning by applying convolution neural networks
-
+- Define the jaccard loss function
+- Define the iou function
+- Create network and compiler by using channels=4, n_blocks=2 and depth=2
+- Define cosine learning rate
+- Create train and validation generators and record the validation results
 
 ## Step 6 - Show prediction performance epoch by epoch
 - Calculate the value of jaccard loss function
