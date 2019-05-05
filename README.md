@@ -1,5 +1,6 @@
 # CS634_Final_Project
 The project is about Kaggle competition - RSNA Pneumonia Detection Challenge provided in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge. 
+For better understanding in the tutorial, please combine tutorial with comments in the notebook. 
 
 ## Project Background
 - Pneumonia is one of the top 10 causes of death in the United States. According to the definition in Wikipedia,  pneumonia is an inflammatory condition of the lung affecting primarily the small air sacs and the diagnosis is often based on the symptoms and physical examination. In this project, we built an algorithm to diagnose pneumonia through locating the lung opacity on chest radiographs(CXR). 
