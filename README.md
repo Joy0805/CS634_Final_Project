@@ -30,7 +30,7 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 - stage_2_train_labels.csv: training data set
 - stage_2_train_images: dicom files of training set
 - stage_2_test_images: dicom files of test set
-* All files available in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data. 
+  - All files available in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data. 
 
 ## Step 1 - Collect information and separate training set
 - Read the label information from stage_2_train_labels.csv
@@ -39,7 +39,7 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
   - For those dicoms that detected pneumonia, add each location information to each patient id. Note that there might be multiple locations in a single dicom file(or say for each patient).
 - Pick out all the samples with pneumonia
 - Read and shuffle the original training set and divide it into new training set and validation set
-  - The division criterion of validation set is one tenth of training set
+  - Division criterion: the validation set is one tenth of the whole training data set
 
 ## Step 2 - Visualization of the overall information about chest radiographs
 - Count the number of pneumonia areas in each pneumonia sample
