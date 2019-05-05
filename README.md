@@ -39,7 +39,7 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
   - For those dicoms that detected pneumonia, add each location information to each patient id. Note that there might be multiple locations in a single dicom file(or say for each patient).
 - Pick out all the samples with pneumonia
 - Read and shuffle the original training set and divide it into new training set and validation set
-  -The division criterion of validation set is that it is one tenth of training set
+  - The division criterion of validation set is that it is one tenth of training set
 
 ## Step 2 - Visualization of the overall information about chest radiographs
 - Count the number of pneumonia areas in each pneumonia sample
