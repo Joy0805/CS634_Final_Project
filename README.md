@@ -54,10 +54,29 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 
 ## Step 4 - Define convolution neural networks
 - Define the normalization function of the neural networks(keras.layers.BatchNormalization)
+  - Keras.layers.batchnormalization: Normalize the activations of the previous layer at each batch, i.e. applies a transformation that maintains the mean activation close to 0 and the activation standard deviation close to 1.
+  - axis: Integer, the axis that should be normalized (typically the features axis). After a Conv2D layer with data_format="channels_first", set axis=1 in BatchNormalization. Because we used conv2D, the axis we used is 1
+  - momentum: Momentum for the moving mean and the moving variance.
+  - epsilon: Small float added to variance to avoid dividing by zero.
+
 - Define The hidden layer of the activation function of the neural networks(keras.layers.LeakyReLU)
+  - Keras.layers.leakyRelLU: Leaky version of a Rectified Linear Unit. It allows a small gradient when the unit is not active: f(x) = alpha * x for x < 0, f(x) = x for x >= 0.
+  - alpha: float >= 0. Negative slope coefficient.
+
 - Define The convolution layer of the neural networks(keras.layers.Conv2D)
+  - Keras.layers.Conv2D： This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers, does not include the batch axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format="channels_last".
+  - filters: Integer, the dimensionality of the output space (i.e. the number of output filters in the convolution).
+The filters we used is “channles”, which is defined at next step named “creat network and compiler”.
+  - kernel_size: An integer or tuple/list of 2 integers, specifying the height and width of the 2D convolution window. Can be a single integer to specify the same value for all spatial dimensions.
+  - padding: one of "valid" or "same" (case-insensitive). Note that "same" is slightly inconsistent across backends with strides != 1. 
+  - use_bias: Boolean, whether the layer uses a bias vector.
+
 - Define the normalization and max pooling function of neural networks to reduce feature dimensions and avoid over-fitting(keras.layers.MaxPool2D)
+  - Keras.layers.MaxPool2D: Max pooling operation for spatial data.
+  - pool_size: integer or tuple of 2 integers, factors by which to downscale (vertical, horizontal). (2, 2) will halve the input in both spatial dimension. If only one integer is specified, the same window length will be used for both dimensions.
+
 - Define the channels, blocks and depth of the neural networks
+  - The reason we choose channels = 8, n_blocks = 4, depth = 2 is that under the same complexity, the loss function of the output result using these parameters is relatively small, indicating that the data fitting degree is relatively high, and the data running speed is relatively fast. Even if the complexity is increased, the loss function does not change significantly. Therefore, the selection of this set of parameters is reasonable.
 
 ## Step 5 - Learning by applying convolution neural networks
 - Define the jaccard loss function
