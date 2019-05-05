@@ -1,6 +1,9 @@
 # CS634_Final_Project
 The project is about Kaggle competition - RSNA Pneumonia Detection Challenge provided in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge. 
 
+## Project Background
+Pneumonia is one of the top 10 causes of death in the United States. According to the definition in Wikipedia,  pneumonia is an inflammatory condition of the lung affecting primarily the small air sacs and the diagnosis of pneumonia is often based on the symptoms and physical examination. In this project, we built an algorithm to diagnose pneumonia based on chest radiographs(CXR). The objective of the algorithm is to locate the lung opacity on chest radiographs and diagnose pneumonia.
+
 ## Introduction
 - The objective of the analysis is to locate the lung opacity on chest radiographs and diagnose pneumonia. 
 - Firstly, choosing convolutional neural network to segment the image of lung.  The network consists of a number of residual blocks with convolutions and downsampling blocks with max pooling.  At the end of the network a single upsampling layer converts the output to the same shape as the input.
