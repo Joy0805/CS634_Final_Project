@@ -87,11 +87,14 @@ The filters we used is “channles”, which is defined at next step named “cr
 - Create train and validation generators and record the validation results
 
 ## Step 6 - Show prediction performance epoch by epoch
-- Calculate the value of jaccard loss function
-- Calculate the prediction accuracy
-- Calculate the overlapping area between predicted area and actual area(iou)
+- Show the value of jaccard loss function
+- Show the prediction accuracy
+- Show the overlapping area rate of predicted area devided by actual area(iou)
 
-## Step 7 - Predict
+## Step 7 - Show prediction performance in cases
+- Show the predicted bounding boxes in several samples of a batch and compare it with the actual bounding boxes
+
+## Step 8 - Prediction
 - Forecasting test sets with trained models
 
 
