@@ -71,8 +71,8 @@ For better understanding in the tutorial, please combine tutorial with comments 
 - Define The convolution layer of the neural networks(keras.layers.Conv2D)
   - Keras.layers.Conv2D： This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers, does not include the batch axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format="channels_last".
   - filters: Integer, the dimensionality of the output space (i.e. the number of output filters in the convolution).
-The filters we used is “channles”, which is defined at next step named “creat network and compiler”.
-  - kernel_size: An integer or tuple/list of 2 integers, specifying the height and width of the 2D convolution window. Can be a single integer to specify the same value for all spatial dimensions.
+The filters we used is “channles”, which is defined at next step named “create network and compiler”.
+  - kernel_size: An integer or tuple/list of 2 integers, specifying the height and width of the 2D convolution window. It can be a single integer to specify the same value for all spatial dimensions.
   - padding: one of "valid" or "same" (case-insensitive). Note that "same" is slightly inconsistent across backends with strides != 1. 
   - use_bias: Boolean, whether the layer uses a bias vector.
 
@@ -81,12 +81,12 @@ The filters we used is “channles”, which is defined at next step named “cr
   - pool_size: integer or tuple of 2 integers, factors by which to downscale (vertical, horizontal). (2, 2) will halve the input in both spatial dimension. If only one integer is specified, the same window length will be used for both dimensions.
 
 - Define the channels, blocks and depth of the neural networks
-  - The reason we choose channels = 8, n_blocks = 4, depth = 2 is that under the same complexity, the loss function of the output result using these parameters is relatively small, indicating that the data fitting degree is relatively high, and the data running speed is relatively fast. Even if the complexity is increased, the loss function does not change significantly. Therefore, the selection of this set of parameters is reasonable.
+  - The reason we choose channels = 16, n_blocks = 4, depth = 3 is that under the same complexity, the loss function of the output result using these parameters is relatively small, indicating that the data fitting degree is relatively high, and the data running speed is relatively fast. Even if the complexity is increased, the loss function does not change significantly. Therefore, the selection of this set of parameters is reasonable.
 
 ## Step 5 - Learning by applying convolution neural networks
 - Define the jaccard loss function
 - Define the iou function
-- Create network and compiler by using channels=4, n_blocks=2 and depth=2
+- Create network and compiler by using channels=16, n_blocks=4 and depth=3
 - Define cosine learning rate
 - Create train and validation generators and record the validation results
 
