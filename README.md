@@ -43,7 +43,7 @@ The project is about Kaggle competition - RSNA Pneumonia Detection Challenge pro
 ## Step 2 - Visualization of the overall information about chest radiographs
 - Count the number of pneumonia areas in each pneumonia sample
 - Draw heatmap of all pneumonia areas
-- Draw histgram of height and width of all pneumonia areas
+- Draw histgram about height and width of all pneumonia areas
 
 ## Step 3 - Create class generator
 - Define basic information of each image file
