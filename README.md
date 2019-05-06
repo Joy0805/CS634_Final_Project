@@ -118,6 +118,9 @@ For better understanding in this tutorial, please combine tutorial with comments
 - The submitted result was graded by Kaggle, and here are our scores. 
   - Private Score: 0.09519
   - Public Score: 0.06712
-
+- The new submission has better scores. 
+  - Private Score: 0.09651
+  - Public Score: 0.07291
+  
 ## Reference
 - CNN Segmentation + connected components, Jonne, https://www.kaggle.com/jonnedtc/cnn-segmentation-connected-components. 
