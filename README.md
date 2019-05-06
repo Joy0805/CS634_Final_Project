@@ -60,7 +60,7 @@ For better understanding in the tutorial, please combine tutorial with comments 
 ## Step 4 - Define convolution neural networks
 - Define the normalization function of the neural networks(keras.layers.BatchNormalization)
   - Keras.layers.batchnormalization: Normalize the activations of the previous layer at each batch, i.e. applies a transformation that maintains the mean activation close to 0 and the activation standard deviation close to 1.
-  - axis: Integer, the axis that should be normalized (typically the features axis). After a Conv2D layer with data_format="channels_first", set axis=1 in BatchNormalization. Because we used conv2D, the axis we used is 1
+  - axis: Integer, the axis that should be normalized (typically the features axis). After a Conv2D layer with data_format="channels_first", set axis=1 in BatchNormalization. Because we used conv2D, the axis we used is 1.
   - momentum: Momentum for the moving mean and the moving variance.
   - epsilon: Small float added to variance to avoid dividing by zero.
 
@@ -70,8 +70,7 @@ For better understanding in the tutorial, please combine tutorial with comments 
 
 - Define The convolution layer of the neural networks(keras.layers.Conv2D)
   - Keras.layers.Conv2D： This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs. If use_bias is True, a bias vector is created and added to the outputs. Finally, if activation is not None, it is applied to the outputs as well. When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers, does not include the batch axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format="channels_last".
-  - filters: Integer, the dimensionality of the output space (i.e. the number of output filters in the convolution).
-The filters we used is “channles”, which is defined at next step named “create network and compiler”.
+  - filters: Integer, the dimensionality of the output space (i.e. the number of output filters in the convolution). The filters we used is “channles”, which is defined at next step named “create network and compiler”.
   - kernel_size: An integer or tuple/list of 2 integers, specifying the height and width of the 2D convolution window. It can be a single integer to specify the same value for all spatial dimensions.
   - padding: one of "valid" or "same" (case-insensitive). Note that "same" is slightly inconsistent across backends with strides != 1. 
   - use_bias: Boolean, whether the layer uses a bias vector.
@@ -104,7 +103,7 @@ The filters we used is “channles”, which is defined at next step named “cr
 
 ## Step 7 - Show prediction performance in cases
 - Show the predicted bounding boxes in several samples of a batch and compare it with the actual bounding boxes
-  - The blue bounding boxes presect the actual pneumonia areas, and the red bounding boxes presect the predicted pneumonia areas.
+  - The blue bounding boxes present the actual pneumonia areas, and the red bounding boxes present the predicted pneumonia areas.
   - According to the presented images, it is clearly that the sensitivity is pretty well. All the actual pneumonia areas were predicted correctly.
   - However, the specificity is not good as the sensitivity, several non-pneumonia areas were regarded as pneumonia areas incorrectly.
 
