@@ -92,11 +92,19 @@ The filters we used is “channles”, which is defined at next step named “cr
 
 ## Step 6 - Show prediction performance epoch by epoch
 - Show the value of jaccard loss function
+  - As the training process going by, the value of both train and valid loss function was decreasing.
 - Show the prediction accuracy
+  - As the training process going by, the accuracy was continuously rising roughly with the peak accuracy as 0.9723. 
+  - The valid accuracy and the train accyracy are constantly approaching.
 - Show the overlapping area rate of predicted area devided by actual area(iou)
+  - As the training process going by, the mean value of iou was ascending roughly with the peak accuracy as 0.7419.
+* All these results showed that our convolution neural network has a satisfectory performance.
 
 ## Step 7 - Show prediction performance in cases
 - Show the predicted bounding boxes in several samples of a batch and compare it with the actual bounding boxes
+  - The blue bounding boxes presect the actual pneumonia areas, and the red bounding boxes presect the predicted pneumonia areas.
+  - According to the presented images, it is clearly that the sensitivity is pretty well. All the actual pneumonia areas were predicted correctly.
+  - However, the specificity is not good as the sensitivity, several non-pneumonia areas were regarded as pneumonia areas incorrectly.
 
 ## Step 8 - Prediction
 - Forecasting test sets with trained models
@@ -104,6 +112,8 @@ The filters we used is “channles”, which is defined at next step named “cr
 
 ## Performance Evaluation
 - The submitted result was graded by Kaggle, and here are our scores. 
+  - Private Score: 0.09519
+  - Public Score: 0.06712
 
 ## Reference
 - CNN Segmentation + connected components, Jonne, https://www.kaggle.com/jonnedtc/cnn-segmentation-connected-components. 
