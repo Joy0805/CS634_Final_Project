@@ -39,13 +39,13 @@ For better understanding in the tutorial, please combine tutorial with comments 
 - Retrieve information by sample name, location for all the samples with pneumonia
   - For those dicoms that detected pneumonia, add each location information to each patient id. Note that there might be multiple locations in a single dicom file(or say for each patient).
 - Read and shuffle the original training set and divide it into new training set and validation set
-  - Division criterion: the validation set is one tenth of the whole training data set
+  - Division criterion: the size of validation set was 1000. 
 
 ## Step 2 - Visualization of the overall information about chest radiographs
 - Count the number of pneumonia areas in each pneumonia sample
   - Most patients had 2 pneumonia areas. 
 - Draw heatmap of all pneumonia areas
-  - X was the upper-left horizontal coordinate of the bounded area, y was the upper-left vertical coordinate of the bounded area, and w, h refer to width and height of the opacity. So the areas were bounded in horizontal coordinate x to x+w and vertical coordinate y to y+h. The brighter color in the heatmap meaned the more overlapped area in the dicom. 
+  - X was the upper-left horizontal coordinate of the bounded area, y was the upper-left vertical coordinate of the bounded area, and w, h refer to width and height of the opacity. So the areas were bounded in horizontal coordinate x to x+w and vertical coordinate y to y+h. The brighter color in the heatmap meant the more overlapped area in the dicom. 
 - Draw histogram about height and width of all pneumonia areas
   - The two graphs showed the distribution of height and width of the pneumonia area. 
 
@@ -100,7 +100,10 @@ The filters we used is “channles”, which is defined at next step named “cr
 
 ## Step 8 - Prediction
 - Forecasting test sets with trained models
+  - A generator for test set was initialized. A dictionary named submission_dict was created to stored the predictions.  
 
+## Performance Evaluation
+- The submitted result was graded by Kaggle, and here are our scores. 
 
 ## Reference
 - CNN Segmentation + connected components, Jonne, https://www.kaggle.com/jonnedtc/cnn-segmentation-connected-components. 
