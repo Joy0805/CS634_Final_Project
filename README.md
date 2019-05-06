@@ -119,6 +119,7 @@ For better understanding in this tutorial, please combine tutorial with comments
   - Private Score: 0.09519
   - Public Score: 0.06712
 - The new submission has better scores. 
+  - The change between the two versions is the learning rate. In this new submission, we used 0.05 for learning rate. 
   - Private Score: 0.09651
   - Public Score: 0.07291
   
