@@ -50,12 +50,12 @@ For better understanding in the tutorial, please combine tutorial with comments 
   - The two graphs showed the distribution of height and width of the pneumonia area. 
 
 ## Step 3 - Create class generator
-- Define basic information of each image file (__init__: an initiation of generator. )
-- Define how to load dicom file as numpy array by using package pydicom and relate it with location information if the image contains pneumonia (__load__)
-- Define prediction function (__loadpredict__)
-- Define how to get the prediction result (__getitem__)
+- Define basic information of each image file (\_\_init\_\_: an initiation of generator. )
+- Define how to load dicom file as numpy array by using package pydicom and relate it with location information if the image contains pneumonia (\_\_load\_\_)
+- Define prediction function (\_\_loadpredict\_\_)
+- Define how to get the prediction result (\_\_getitem\_\_)
 - Define epoch in order to learn and precit step by step (on_epoch_end)
-- Define the number of images need to learn and predict in each epoch (__len__)
+- Define the number of images need to learn and predict in each epoch (\_\_len\_\_)
 
 ## Step 4 - Define convolution neural networks
 - Define the normalization function of the neural networks(keras.layers.BatchNormalization)
