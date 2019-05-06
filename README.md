@@ -6,7 +6,7 @@ For better understanding in the tutorial, please combine tutorial with comments 
 - Pneumonia is one of the top 10 causes of death in the United States. According to the definition in Wikipedia,  pneumonia is an inflammatory condition of the lung affecting primarily the small air sacs and the diagnosis is often based on the symptoms and physical examination. In this project, we built an algorithm to diagnose pneumonia through locating the lung opacity on chest radiographs(CXR). 
 
 ## Introduction
-- In this project, we first chose convolutional neural network to segment the image of lung. The network consists of a number of residual blocks with convolutions and downsampling blocks with max pooling. At the end of the network, a single upsampling layer converts the output to the same shape as the input. Then we used connected components to separate multiple areas of predicted pneumonia, and drew a bounding box around every connected component.
+- In this project, we first chose convolutional neural network to segment the image of lung. The network consisted of a number of residual blocks with convolutions and downsampling blocks with max pooling. At the end of the network, a single upsampling layer converted the output to the same shape as the input. Then we used connected components to separate multiple areas of predicted pneumonia, and drew a bounding box around every connected component.
 
 
 ## Overview
