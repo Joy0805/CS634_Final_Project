@@ -100,7 +100,7 @@ The filters we used is “channles”, which is defined at next step named “cr
 
 ## Step 8 - Prediction
 - Forecasting test sets with trained models
-  - A generator for test set was initialized. A dictionary named submission_dict was created to stored the predictions.  
+  - A generator for test set was initialized. A dictionary named submission_dict was created to stored the predictions.  A nested for loop was used to append multiple pneumonia areas detected in the dicoms. The loop was exited when it collected all test results. 
 
 ## Performance Evaluation
 - The submitted result was graded by Kaggle, and here are our scores. 
