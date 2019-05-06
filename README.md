@@ -34,6 +34,7 @@ For better understanding in this tutorial, please combine tutorial with comments
   - All files available in https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data. 
 - RSNA project.ipynb: main program (output and training/testing session included)
 - rsna-project.log: events recording file for the main program
+- submission.csv: output file
 
 ## Step 1 - Collect information and separate training set
 - Read the label information from stage_2_train_labels.csv
